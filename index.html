@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog.</title>
+  <meta name="description" content="A modern blog theme">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main-content">
+    <section class="container">
+      
+      <!-- Intro / Header -->
+      <header class="intro">
+        <h1 class="intro__title">Blog.</h1>
+        <h2 class="intro__subtitle">
+          A blog example using 
+          <a href="https://v0.dev/" class="intro__link" target="_blank" rel="noopener noreferrer">v0</a>
+          and 
+          <a href="https://basehub.com" class="intro__link" target="_blank" rel="noopener noreferrer">BaseHub</a>.
+        </h2>
+      </header>
+
+      <!-- Hero Post (Featured Post) -->
+      <!-- WordPress: <?php if (have_posts()) : the_post(); ?> -->
+      <section class="hero-post">
+        <div class="hero-post__image-container">
+          <a href="single.html">
+            <img 
+              src="1500x600.jpg" 
+              alt="Cover Image for Featured Post" 
+              class="hero-post__image"
+            >
+          </a>
+        </div>
+        <div class="hero-post__content">
+          <div>
+            <h3 class="hero-post__title">
+              <a href="single.html" class="hero-post__title-link">
+                Getting Started with Modern Web Development
+              </a>
+            </h3>
+            <div class="hero-post__date">
+              <time datetime="2024-12-01">December 1, 2024</time>
+            </div>
+          </div>
+          <div>
+            <p class="hero-post__excerpt">
+              Learn the fundamentals of building modern web applications with the latest tools and frameworks. This comprehensive guide covers everything from setup to deployment.
+            </p>
+            <div class="avatar">
+              <div class="avatar__image-container">
+                <img 
+                  src="96x96.jpg" 
+                  alt="John Doe" 
+                  class="avatar__image"
+                >
+              </div>
+              <div class="avatar__name">John Doe</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- WordPress: <?php endif; ?> -->
+
+      <!-- More Stories Section -->
+      <section class="more-stories">
+        <h2 class="more-stories__title">More Stories</h2>
+        <div class="more-stories__grid">
+          
+          <!-- WordPress: <?php while (have_posts()) : the_post(); ?> -->
+          
+          <!-- Post Preview 1 -->
+          <article class="post-preview">
+            <div class="post-preview__image-container">
+              <a href="single.html">
+                <img 
+                  src="700x400.jpg" 
+                  alt="Cover Image for Understanding React Hooks" 
+                  class="post-preview__image"
+                >
+              </a>
+            </div>
+            <h3 class="post-preview__title">
+              <a href="single.html" class="post-preview__title-link">
+                Understanding React Hooks
+              </a>
+            </h3>
+            <div class="post-preview__date">
+              <time datetime="2024-11-28">November 28, 2024</time>
+            </div>
+            <p class="post-preview__excerpt">
+              A deep dive into React Hooks and how they can simplify your component logic while making your code more reusable.
+            </p>
+            <div class="avatar">
+              <div class="avatar__image-container">
+                <img 
+                  src="96x96.jpg" 
+                  alt="Jane Smith" 
+                  class="avatar__image"
+                >
+              </div>
+              <div class="avatar__name">Jane Smith</div>
+            </div>
+          </article>
+
+          <!-- Post Preview 2 -->
+          <article class="post-preview">
+            <div class="post-preview__image-container">
+              <a href="single.html">
+                <img 
+                  src="700x400.jpg" 
+                  alt="Cover Image for CSS Grid Layouts" 
+                  class="post-preview__image"
+                >
+              </a>
+            </div>
+            <h3 class="post-preview__title">
+              <a href="single.html" class="post-preview__title-link">
+                Mastering CSS Grid Layouts
+              </a>
+            </h3>
+            <div class="post-preview__date">
+              <time datetime="2024-11-25">November 25, 2024</time>
+            </div>
+            <p class="post-preview__excerpt">
+              Learn how to create complex, responsive layouts with CSS Grid. From basic grids to advanced techniques.
+            </p>
+            <div class="avatar">
+              <div class="avatar__image-container">
+                <img 
+                  src="96x96.jpg" 
+                  alt="Alex Johnson" 
+                  class="avatar__image"
+                >
+              </div>
+              <div class="avatar__name">Alex Johnson</div>
+            </div>
+          </article>
+
+          <!-- Post Preview 3 -->
+          <article class="post-preview">
+            <div class="post-preview__image-container">
+              <a href="single.html">
+                <img 
+                  src="700x400.jpg" 
+                  alt="Cover Image for JavaScript Best Practices" 
+                  class="post-preview__image"
+                >
+              </a>
+            </div>
+            <h3 class="post-preview__title">
+              <a href="single.html" class="post-preview__title-link">
+                JavaScript Best Practices in 2024
+              </a>
+            </h3>
+            <div class="post-preview__date">
+              <time datetime="2024-11-20">November 20, 2024</time>
+            </div>
+            <p class="post-preview__excerpt">
+              Stay up to date with the latest JavaScript patterns and best practices for writing clean, maintainable code.
+            </p>
+            <div class="avatar">
+              <div class="avatar__image-container">
+                <img 
+                  src="96x96.jpg" 
+                  alt="Mike Wilson" 
+                  class="avatar__image"
+                >
+              </div>
+              <div class="avatar__name">Mike Wilson</div>
+            </div>
+          </article>
+
+          <!-- Post Preview 4 -->
+          <article class="post-preview">
+            <div class="post-preview__image-container">
+              <a href="single.html">
+                <img 
+                  src="700x400.jpg" 
+                  alt="Cover Image for Building REST APIs" 
+                  class="post-preview__image"
+                >
+              </a>
+            </div>
+            <h3 class="post-preview__title">
+              <a href="single.html" class="post-preview__title-link">
+                Building REST APIs with Node.js
+              </a>
+            </h3>
+            <div class="post-preview__date">
+              <time datetime="2024-11-15">November 15, 2024</time>
+            </div>
+            <p class="post-preview__excerpt">
+              A comprehensive guide to creating robust REST APIs using Node.js and Express with proper error handling.
+            </p>
+            <div class="avatar">
+              <div class="avatar__image-container">
+                <img 
+                  src="96x96.jpg" 
+                  alt="Sarah Chen" 
+                  class="avatar__image"
+                >
+              </div>
+              <div class="avatar__name">Sarah Chen</div>
+            </div>
+          </article>
+
+          <!-- WordPress: <?php endwhile; ?> -->
+          
+        </div>
+      </section>
+
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter__inner">
+          <h2 class="newsletter__title">Stay Updated</h2>
+          <p class="newsletter__description">
+            Subscribe to our newsletter to get the latest posts delivered straight to your inbox.
+          </p>
+          <form class="newsletter__form" id="newsletter-form">
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Enter your email" 
+              required 
+              class="newsletter__input"
+            >
+            <button type="submit" class="newsletter__button">
+              Subscribe
+            </button>
+          </form>
+          <p class="newsletter__message" id="newsletter-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <h3 class="footer__title">Built with Next.js.</h3>
+          <div class="footer__links">
+            <a 
+              href="https://nextjs.org/docs" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="footer__button"
+            >
+              Read Documentation
+            </a>
+            <a 
+              href="https://github.com/julianbenegas/v0-basehub-blog" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="footer__link"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
